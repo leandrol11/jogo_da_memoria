@@ -74,11 +74,9 @@ const revelaCarta = ({ target }) => {
     } else if (segundaCarta === "") {
         target.parentNode.classList.add("revela-carta")
         segundaCarta = target.parentNode
+        // vê se são iguais
+        checaCarta()
     }
-
-    // vê se são iguais
-    checaCarta()
-
 }
 
 criaCarta = (personagem) => {
