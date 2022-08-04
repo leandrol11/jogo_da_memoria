@@ -1,6 +1,7 @@
 const grid = document.querySelector(".grid")
 const player = document.querySelector(".player")
 const timer = document.querySelector(".timer")
+const posJogo = document.querySelector(".msg-pos-jogo")
 
 const personagens = [
     "beth",
@@ -30,10 +31,8 @@ const checaFimDeJogo = () => {
     const cartasDesabilitadas = document.querySelectorAll(".carta-revelada")
     if (cartasDesabilitadas.length === 20) {
         clearInterval(this.loop)
-        setTimeout(() => {
-            alert(`Boa, ${player.innerHTML}! Você conseguiu ganhar em ${timer.innerHTML} segundos.`)
-            window.location = "posjogo.html"
-        }, 300)
+        alert(`Boa, ${player.innerHTML}! Você conseguiu ganhar em ${timer.innerHTML} segundos.`)
+        window.location = "posjogo.html"
     }
 }
 
@@ -121,5 +120,3 @@ window.onload = () => {
     tempo()
     carregaJogo()
 }
-
-
