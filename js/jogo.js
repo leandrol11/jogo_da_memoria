@@ -84,7 +84,7 @@ criaCarta = (personagem) => {
     const frontal = criaHtml("div", "frontal")
     const atras = criaHtml("div", "atras")
 
-    frontal.style.backgroundImage = `url("../img/${personagem}.png")`
+    frontal.style.backgroundImage = `url("img/${personagem}.png")`
 
     carta.appendChild(frontal)
     carta.appendChild(atras)
